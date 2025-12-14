@@ -7,10 +7,11 @@ def train_model():
     X = iris.data
     y = iris.target
 
-    model = LogisticRegression()
+    model = LogisticRegression(max_iter=200)
     model.fit(X, y)
 
     return model
+
 
 
 
